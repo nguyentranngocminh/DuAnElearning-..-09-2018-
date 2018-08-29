@@ -1,0 +1,6 @@
+
+@mixin background--carousel($url){
+    @extend .bg--img;
+    background-image: url($url);
+}
+

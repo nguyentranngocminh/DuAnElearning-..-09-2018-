@@ -1,0 +1,55 @@
+// begin MenuNavbar
+.MenuNavbar{
+    width: 100%;
+    background: url(../img/background.jpg);
+    .myMenu{
+        margin: 0 auto;
+        padding: 0 0.5rem!important;
+        padding-bottom: .5rem;
+        ul{
+            li{
+                margin:0 1.5rem;
+                a{
+                    font-size: $fs-2;
+                    color: #0e3a09 !important;
+                    &:hover{
+                        font-size: 1.8rem;
+                        color: red!important;
+                    }
+                
+                }
+                a.active{
+                        color: red!important;
+                }
+                &:hover{
+                    transition: 0.5s;
+                    border-bottom: 2px solid red; 
+                    
+                }
+            }
+            
+        }
+    }
+}
+.MenuNavbar--color{
+    border: 13px solid $color-darkgreen;
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+    background: white;
+}
+.sticky-top {   
+    z-index: 900;
+}
+@media screen and (max-width: 978px) {
+    .MenuNavbar .myMenu ul li {
+        margin: 0;
+        a{
+            font-size: 1.2rem;
+            &:hover{
+                font-size: 1.2rem!important;
+            }
+        }
+    }
+}
+
+// end MenuNavbar

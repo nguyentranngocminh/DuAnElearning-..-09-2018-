@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- begin header -->
+    <div class="header" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="lienHe header__menu">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="menu_icon">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>108 Sư Vạn Hạnh</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="menu_icon">
+                                        <i class="fa fa-phone"></i>
+                                        <span>01234567898</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="dangki header__menu text-right">
+                        <ul>
+                            <li><a href="" class="btn " data-toggle="modal" data-target="#Login">
+                                <div class="menu_icon">
+                                    <i class="fa fa-pencil-square"></i>
+                                    <span>Login</span>
+                                </div>
+                            </a></li>
+                            <li><a href="" class="btn " data-toggle="modal" data-target="#Register">
+                                <div class="menu_icon">
+                                    <i class="fa fa-pencil-square"></i>
+                                    <span>Register</span>
+                                </div>
+                            </a></li>
+                            <li><a href="Profile.html">
+                                <div class="menu_icon">
+                                    <i class="fa fa-user-o"></i>
+                                    <span>Profile</span>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <div class="modal" id="Login">
+                            <div class="Modal_login">
+                                <div class="left">
+                                    <div class="text text-center">
+                                        <h1>Bắt đầu đăng kí tài khoản tham gia khóa học nào!!!</h1>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h1 class="">Login</h1>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Tài Khoản</span>
+                                            </div>
+                                            <input id="TaiKhoan" type="text" class="form-control" placeholder="minh123456789">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Họ & Tên</span>
+                                            </div>
+                                            <input id="HoTen" type="text" class="form-control" placeholder="Nguyễn Minh">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Mật Khẩu</span>
+                                            </div>
+                                            <input id="MatKhau" type="text" class="form-control" placeholder="*****">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Email</span>
+                                            </div>
+                                            <input id="Email" type="text" class="form-control" placeholder="minh@gmail.com">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Số Điện Thoại</span>
+                                            </div>
+                                            <input id="SoDienThoai" type="text" class="form-control" placeholder="012345678">
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                        <button id="btnRegister" type="button" class="btn btnRegister"> Register</button>
+                                        <button type="button" class="btn btn-danger btnClose" data-dismiss="modal">
+                                            <i class="fa fa-times text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal" id="Register">
+                            <div class="Modal_login">
+                                <div class="left">
+                                    <div class="text text-center">
+                                        <h1>Đăng nhập tài khoản tham gia khóa học nào!!!</h1>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h1 class="mb-5">Register</h1>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Tài Khoản</span>
+                                            </div>
+                                            <input id="TaiKhoan" type="text" class="form-control" placeholder="minh123456789">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Mật Khẩu</span>
+                                            </div>
+                                            <input id="MatKhau" type="text" class="form-control" placeholder="*****">
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                        <button id="btnRegister" type="button" class="btn btnRegister"> Register</button>
+                                        <button type="button" class="btn btn-danger btnClose" data-dismiss="modal">
+                                            <i class="fa fa-times text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- begin header logo -->
+    <div class="header_logo">
+        <div class="container-fluid color__logo">
+            <div class="row">
+                <div class="col-md-4 p-5 left__logo">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input id="txtSearch" type="text" class="form-control" placeholder="search.....">
+                    </div>
+                </div>
+                <div class="col-md-4 center__logo">
+                    <span class="textLeft">Learing</span>
+                    <div class="khungtron">
+                        <div class="boder">
+                            <img src="img/KhungXanh.jpg" alt="">
+                            <div class="logo">
+                                <img src="img/logo.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="textRight">Technology</span>
+                    <div class="title">
+                        <h1>Learing Technology</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 p-5 right__logo text-right">
+                    <div class="input-group ">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text"><i class="fa fa-shopping-cart"></i></span>
+                        </div>
+                        <a href="">
+                            <span class="form-control">0 item - 0.00$</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end header logo -->
+    <!-- begin menuNav -->
+    <div class="MenuNavbar sticky-top ">
+        <div class="container MenuNavbar--color">
+            <div class="row">
+                <nav class="navbar navbar-expand-md myMenu ">
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"><i class="fa fa-align-justify"></i></span>
+                    </button>
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Feadtures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Price</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Special Deals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- end menuNav -->
+    <!-- begin profile -->
+    <div class="Profile">
+        <div class="container Profile--color py-5">
+            <div class="row">
+                <div class="col-md-3 userProfile">
+                    <div class="NavProfile">
+                        <div class="divAvatar ">
+                            <img class="imgAvatar" src="anonymous.png" >
+                        </div>
+                    
+                        <div class="titleName">Nguyễn Trần Ngọc Minh</div>
+                        <br>
+                        <ul class="ulMenuProfile nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">Thông tin tài khoản</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#KhoaHoc">Khóa học của tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#ThanhToan">Lịch sử thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="userInfo col-md-9 ">
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="home">
+                                <div class="titleInfo">Thông tin tài khoản</div>
+                                <div class="contentInfo">
+                                    <div class="infoContent col-md-12">
+                                        <div class="infoContent-title">Thông tin cá nhân</div>
+                                        <br>
+                                        <div class="title_ col-md-2">
+                                            Họ tên
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div> 
+                                        <div class="title_ col-md-2">
+                                            Email
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="title_ col-md-2">
+                                            Điện thoại
+                                        </div>
+                                        <div class="input-group mb-3 ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="title_ col-md-2">
+                                            Địa chỉ
+                                        </div>
+                                        <div class="text_ ">
+                                            <textarea id="Address" class="Address form-control txt_ " name="Address" placeholder="Địa chỉ">  </textarea>
+                            
+                                        </div>
+                                        <div class="lvl SINHVIEN">
+                                            <div class="title_ col-md-2">
+                                                Trường học
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-university iconUserName ic" aria-hidden="true"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="divButton">
+                                            <button class="btn btn-success btnUpdateInfo">Cập nhật</button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                        <div class="tab-pane container fade" id="KhoaHoc">
+                            <div class="titleInfo">Khoá Học Của Tôi</div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="subject__item ">
+                                        <div class="subject__img">
+                                            <img src="img/khoahoc.jpg" alt="">
+                                        </div>
+                                        <div class="subject__text">
+                                            <h3 class="txtTenKhoaHoc">Lủm chủm trôi trôi </h3>
+                                            <div class="danhgia m-1">
+                                                <span><i class="fa fa-users"></i></span>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="giangvien m-1">
+                                                <span>Giảng viên:</span>
+                                                <span id="txtTenGiangVien">Đặng trung hiếu</span>
+                                            </div>
+                                            <div class="dongia m-1">
+                                                <span class="mr-2">Đơn giá:</span><span class="txtGiaTien ">$110.00</span><span class="ml-2">$99.00</span>
+                                            </div>
+                                            <div class="luotxem">
+                                                <span class="text-right"><i class="fa fa-eye"></i>200 lượt xem</span>
+                                            </div>
+                                            <button type-"button" id="btnDangKiKhoaHoc" class="btn btn-success m-2">Đăng Kí</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="subject__item ">
+                                        <div class="subject__img">
+                                            <img src="img/khoahoc.jpg" alt="">
+                                        </div>
+                                        <div class="subject__text">
+                                            <h3 class="txtTenKhoaHoc">Lủm chủm trôi trôi </h3>
+                                            <div class="danhgia m-1">
+                                                <span><i class="fa fa-users"></i></span>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="giangvien m-1">
+                                                <span>Giảng viên:</span>
+                                                <span id="txtTenGiangVien">Đặng trung hiếu</span>
+                                            </div>
+                                            <div class="dongia m-1">
+                                                <span class="mr-2">Đơn giá:</span><span class="txtGiaTien ">$110.00</span><span class="ml-2">$99.00</span>
+                                            </div>
+                                            <div class="luotxem">
+                                                <span class="text-right"><i class="fa fa-eye"></i>200 lượt xem</span>
+                                            </div>
+                                            <button type-"button" id="btnDangKiKhoaHoc" class="btn btn-success m-2">Đăng Kí</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="subject__item ">
+                                        <div class="subject__img">
+                                            <img src="img/khoahoc.jpg" alt="">
+                                        </div>
+                                        <div class="subject__text">
+                                            <h3 class="txtTenKhoaHoc">Lủm chủm trôi trôi </h3>
+                                            <div class="danhgia m-1">
+                                                <span><i class="fa fa-users"></i></span>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="giangvien m-1">
+                                                <span>Giảng viên:</span>
+                                                <span id="txtTenGiangVien">Đặng trung hiếu</span>
+                                            </div>
+                                            <div class="dongia m-1">
+                                                <span class="mr-2">Đơn giá:</span><span class="txtGiaTien ">$110.00</span><span class="ml-2">$99.00</span>
+                                            </div>
+                                            <div class="luotxem">
+                                                <span class="text-right"><i class="fa fa-eye"></i>200 lượt xem</span>
+                                            </div>
+                                            <button type-"button" id="btnDangKiKhoaHoc" class="btn btn-success m-2">Đăng Kí</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="ThanhToan">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end profile -->
+    <!-- begin footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer__educate text-white">
+                        <h1>ABOUT EDUCARE</h1>
+                        <p>Duis autem vel eum iriure dolor inhendrerit in vulputate velit esse molestieconsequat, vel illum dolore eu feugiatnulla facilisis at vero eros.</p>
+                        <p>Email: educare@gmail.com</p>
+                        <p>Phone: 01234567898</p>
+                        <p>108 Sư Vạn Hạnh</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer__news text-white">
+                        <h1>LATEST NEWS</h1>
+                        <div class="info__news">
+                            <a href="">
+                                <img src="img/khoahoc.jpg" alt="">
+                                <h5>Hard Work Is What Brings Great Results</h4>
+                                <p class="calender">Dec 07, 2016</p>
+                            </a>
+                            <a href="">
+                                <img src="img/khoahoc.jpg" alt="">
+                                <h5>Hard Work Is What Brings Great Results</h4>
+                                <p class="calender">Dec 07, 2016</p>
+                            </a>
+                            <a href="">
+                                <img src="img/khoahoc.jpg" alt="">
+                                <h5>Hard Work Is What Brings Great Results</h5>
+                                <p class="calender">Dec 07, 2016</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer__links text-white">
+                        <h1>USEFUL LINKS</h1>
+                        <div class="links__menuNav">
+                            <ul>
+                                <li><a href="">Courses</a></li>
+                                <li><a href="">Student Support</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms & Conditions</a></li>
+                                <li><a href="">Social media</a></li>
+                                <li><a href="">Facilities</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

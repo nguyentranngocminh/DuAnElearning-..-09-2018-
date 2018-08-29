@@ -1,0 +1,72 @@
+
+// begin Profile
+.Profile{
+    background: url(../img/background.jpg);
+    width: 100%;
+    padding: 5rem 0;
+    .Profile--color{
+        background-color: white;
+        .NavProfile{
+            .divAvatar{ 
+                height:250px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .titleName{
+                font-size: 1.5rem;
+                color: white;
+                background-color: $color-darkgreen;
+                padding: 10px;
+            }
+            .ulMenuProfile.nav{
+                display: block;
+                li{
+                    .nav-link {
+                        border: 0!important; 
+                        font-size: 1.2rem;
+                    }
+                    .nav-link.active {
+                        color: white;
+                        background-color: $color-purple;
+
+                    }
+                }
+            }
+        }
+        .userInfo{
+            #home{
+                .titleInfo{
+                    text-align: center;
+                    font-size: $fs-3;
+                    color: $color-darkgreen;
+                }
+                .contentInfo{
+                    .infoContent-title{
+                        font-size: $fs-2;
+                        color: $color-purple;
+                    }
+                    .title_{
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+                    .input-group, textarea{
+                        margin-left: 1rem;
+                    }
+                    
+                }
+            }
+            #KhoaHoc{
+                .titleInfo{
+                    text-align: center;
+                    font-size: $fs-3;
+                    color: $color-darkgreen;
+                    margin-bottom: $mg-2;
+                }
+
+            }
+        }
+    }
+}
+// end Profile

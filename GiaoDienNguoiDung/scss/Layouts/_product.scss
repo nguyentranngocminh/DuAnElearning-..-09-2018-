@@ -1,0 +1,294 @@
+
+// begin Product
+.Product{
+    background: url(../img/background.jpg);
+    width: 100%;
+    padding: 5rem 0;
+    .category{
+        h1{color:$color-purple;}
+        ul{
+            list-style: none;
+            .product__item{
+                position: relative;
+                border-bottom: 1px dashed $color-dash;
+                padding: 0.3rem 0;
+                margin: 0.8rem 0;
+                a{
+                    font-size: 1.2rem;
+                    color: $color-green!important;
+                    i{
+                        margin-right: 0.5rem;
+                        color:$color-green;
+                    }
+                }
+                .countProduct{
+                    position: absolute;
+                    right: 0;
+                    color: $color-green !important;
+                }
+                &:hover{
+                    a{
+                            color: $color-blue!important;
+                            text-decoration: none;
+                            i{
+                                color: $color-blue!important;
+                            }
+
+                    }
+                    span{
+                        color: $color-blue!important;
+                    }
+                }
+            }
+        }
+        
+    }
+    .best__sellers{
+        .subject_best_seller{
+            float: left;
+            width: 100%;
+            margin: 0 0 30px;
+            list-style: none;
+            .top_subject{
+                float: left;
+                width: 100%;
+                margin-bottom: 20px;
+                .top_subject_count{
+                    float: left;
+                    margin-right: 10px;
+                    font-size: 3rem;
+                    color:$color-orange;
+                }
+                .top_subject_detail{
+                    background: none;
+                    float: left;
+                    width: 50%;
+                    padding: 0px 0 0;
+                    a{
+                        span{
+                            font-size: 1.4rem;
+                            color: $color-orange !important;
+                            font-weight: 700;
+                            &:hover{
+                                color: yellowgreen!important;
+                            }
+                        }
+                    }
+                    .subject_price{
+                        span:nth-child(1){
+                            font-weight: 800;
+                            color:black;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                a{
+                    line-height: 1.7;
+                    img{
+                        width: 68px;line-height: 1.7;
+                    }
+                    
+                }
+            }
+            
+            
+        }
+    }
+      
+}
+.subject__item{
+    width: 100%;
+    background-color: #71da8f;
+    border: 1px solid #e6cfe5cf;
+    padding: 0 0 8px;
+    text-align: center;
+    box-shadow: 0 0 16px 0 $color-dash;
+    // height: 397px;
+    .subject__img{
+        overflow: hidden;
+        margin-bottom: 0;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .subject__text{
+        padding: 0.8rem 0.5rem 0.5rem;
+        margin: -9% 8px 0;
+        position: relative;
+        z-index: 0;
+        background-color: #fff;
+        box-shadow: 0 0 16px 0 $color-dash;
+        .txtTenKhoaHoc{
+            color: $color-purple;
+        }
+        .danhgia, .luotxem{
+            i{
+                color: $color-green;
+            }
+        }
+        .dongia{
+            span:nth-child(1){
+                font-weight: bold;
+            }
+            .txtGiaTien{
+                font-size: 1.2rem;
+                text-decoration: line-through;
+            }
+            span:nth-child(3){
+                font-size: 1.5rem;
+                color:red;
+            }
+        }
+        .giangvien{
+            span:nth-child(2){
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+        #btnDangKiKhoaHoc{
+            padding: 5px 20px;
+            border-radius: 20px 20px;
+            background:$color-purple;
+            &:hover{
+                // padding: 8px 20px;
+                color: black;
+                // font-size: 1.2rem;
+                background: linear-gradient(90deg, #d4b9ff, #d1ffb5, #d1ffb5, #d4b9ff);
+                transition: 0.5s;
+            }
+        }
+    }
+} 
+.myproduct{
+    background: white;
+}
+@media screen and (max-width: 982px) {
+    .subject__item{
+        .subject__img{
+            height: 160px!important;
+        }
+        .subject__text{
+            .txtTenKhoaHoc{
+                color: $color-purple;
+                font-size: 1.2rem;
+            }
+            .danhgia, .luotxem{
+                i{
+                    color: $color-green;
+                }
+            }
+            .dongia{
+                span:nth-child(1){
+                    display: none;
+                }
+                .txtGiaTien{
+                    font-size: 1rem!important;
+                    text-decoration: line-through;
+                }
+                span:nth-child(3){
+                    font-size: 1.1rem!important;
+                    color:red;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 765px) {
+    .subject__item{
+        margin-bottom: $mg-1;
+        .subject__img{
+            height: 280px!important;
+        }
+        .subject__text{
+            .txtTenKhoaHoc{
+                color: $color-purple;
+                font-size: $fs-3;
+            }
+            .danhgia, .luotxem{
+                i{
+                    color: $color-green;
+                }
+            }
+            .dongia{
+                span:nth-child(1){
+                    display: inline-block;
+                    font-size: 1.2rem!important;
+                }
+                .txtGiaTien{
+                    font-size: 1.2rem!important;
+                    text-decoration: line-through;
+                }
+                span:nth-child(3){
+                    font-size: 1.5rem!important;
+                    color:red;
+                }
+            }
+            #btnDangKiKhoaHoc{
+                padding: 5px 20px;
+                border-radius: 20px 20px;
+                background:$color-purple;
+                font-size: 1.5rem;
+                &:hover{
+                    // padding: 8px 20px;
+                    color: black;
+                    // font-size: 1.2rem;
+                    background: linear-gradient(90deg, #d4b9ff, #d1ffb5, #d1ffb5, #d4b9ff);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+.subject{
+    .subject__info{
+        background-color: $color-input-bg;
+        h2{
+            background: $color-purple;
+            padding:1.5rem;
+            text-align: center;
+            color: white;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 20px 30px;
+            li{
+                border-bottom: 1px dotted #495057;
+                padding: 10px 0;
+                span{
+                    float: right;
+                }
+            }
+
+        }
+        #btnDangKy{
+            padding: 10px 30px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            background-color: $color-purple;
+        }
+    }
+    .menuTab{
+        ul>li>a{
+            font-size: 1.5rem;
+            color: $color-purple!important;
+        }
+        a.active{
+            color: $color-darkgreen!important;
+        }
+        #Reviews{
+            span{
+                font-size: 1.2rem;
+            }
+            textarea, input{
+                border: 2px solid $color-darkgreen;
+            }
+            
+        }
+    }
+}
+// end Product 

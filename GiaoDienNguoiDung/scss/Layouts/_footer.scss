@@ -1,0 +1,55 @@
+// begin footer
+.footer{
+    background: $color-darkgreen;
+    padding: 5rem 0;
+    h1{
+        padding-bottom: 2rem;
+    }
+    .footer__educate{
+        p{
+            font-size: 1.2rem;
+            color: white;
+        }
+    }
+    .footer__news{
+        .info__news{
+            a{
+                img{
+                    float: left;
+                    margin-right:10px; 
+                    width:90px; height: 90px;
+                }
+                h5{
+                    margin: 5px 0;
+                    line-height: 22px;
+                    margin-bottom: 2rem;
+                    color: white!important;
+                }
+                .calender{
+                    color: $color-green!important;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+    .footer__links{
+        .links__menuNav{
+            ul{
+                line-height: 35px;
+                list-style: outside none none;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                li{
+                    float: left;
+                    width:50%;
+                    a{
+                        font-size: 1.2rem;
+                        color: white!important;
+                    }
+                }
+            }
+        }
+    }
+}
+// end footer
