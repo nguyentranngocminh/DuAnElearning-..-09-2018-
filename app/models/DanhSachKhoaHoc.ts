@@ -1,7 +1,9 @@
 import { KhoaHoc } from "./KhoaHoc";
 
 export class DanhSachKhoaHoc {
-    private DSKhoaHoc: KhoaHoc[];
+    
+    public DSKhoaHoc: KhoaHoc[];
+
     public constructor() {
         this.DSKhoaHoc = [];
     }
@@ -27,6 +29,19 @@ export class DanhSachKhoaHoc {
                 return item;
             }
         }
+    }
+
+    public LayKhoaHocDaGhiDanh(mangKhoaHoc: any[]): KhoaHoc[]{
+        let khDaGhiDanh: KhoaHoc[] = []; 
+        for(let item of mangKhoaHoc){
+            for(let item2 of this.DSKhoaHoc)
+            {
+                if(item.MaKhoaHoc == item2.MaKhoaHoc){
+                    khDaGhiDanh.push(item2);
+                }
+            }
+        }
+        return khDaGhiDanh;
     }
 
     public XoaKhoaHoc(maKH: string): void{

@@ -37,4 +37,14 @@ export class NguoiDungService {
             dataType: "JSON"
         });
     }
+
+    public CapNhatNguoiDung(nguoiDung: NguoiDung){
+        return $.ajax({
+            url: "http://sv.myclass.vn/api/QuanLyTrungTam/CapNhatThongTinNguoiDung",
+            type: "PUT",
+            dataType: "JSON",
+            contentType: 'application/json',
+            data: JSON.stringify(nguoiDung)
+        });
+    }
 }

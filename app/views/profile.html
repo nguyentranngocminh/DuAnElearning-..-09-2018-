@@ -85,10 +85,10 @@
                                                 <span class="input-group-text">Loại người dùng</span>
                                             </div>
                                             <select id="dkLoaiNguoiDung">
-                                                        <option disabled>Chọn loại người dùng</option>
-                                                        <option value="HV">Học viên</option>
-                                                        <option value="GV">Giáo vụ</option>
-                                                    </select>
+                                                <option disabled>Chọn loại người dùng</option>
+                                                <option value="HV">Học viên</option>
+                                                <option value="GV">Giáo vụ</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="button">
@@ -229,7 +229,7 @@
                             <img class="imgAvatar" src="anonymous.png">
                         </div>
 
-                        <div class="titleName">Nguyễn Trần Ngọc Minh</div>
+                        <div id="proTitleName" class="titleName">Nguyễn Trần Ngọc Minh</div>
                         <br>
                         <ul class="ulMenuProfile nav nav-tabs">
                             <li class="nav-item">
@@ -252,54 +252,62 @@
                                 <div class="infoContent col-md-12">
                                     <div class="infoContent-title">Thông tin cá nhân</div>
                                     <br>
-                                    <div class="title_ col-md-2">
+
+                                    <div class="title_ col-md-3">
+                                        Tên đăng nhập
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">@</span>
+                                        </div>
+                                        <input type="text" id="proTaiKhoan" class="form-control">
+                                    </div>
+
+                                    <div class="title_ col-md-3">
                                         Họ tên
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">@</span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Username">
+                                        <input type="text" id="proHoTen" class="form-control">
                                     </div>
-                                    <div class="title_ col-md-2">
+
+                                    <div class="title_ col-md-3">
                                         Email
                                     </div>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Username">
+                                        <input type="email" id="proEmail" class="form-control">
                                     </div>
-                                    <div class="title_ col-md-2">
+
+                                    <div class="title_ col-md-3">
                                         Điện thoại
                                     </div>
                                     <div class="input-group mb-3 ">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-phone"></i></span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Username">
-                                    </div>
-                                    <div class="title_ col-md-2">
-                                        Địa chỉ
-                                    </div>
-                                    <div class="text_ ">
-                                        <textarea id="Address" class="Address form-control txt_ " name="Address" placeholder="Địa chỉ">  </textarea>
-
-                                    </div>
-                                    <div class="lvl SINHVIEN">
-                                        <div class="title_ col-md-2">
-                                            Trường học
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-university iconUserName ic" aria-hidden="true"></i></span>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Username">
-                                        </div>
+                                        <input type="text" id="proDienThoai" class="form-control">
                                     </div>
 
+                                    <div class="title_ col-md-3">
+                                        Loại gười dùng
+                                    </div>
+                                    <div class="input-group mb-3 ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                        </div>
+                                        <select id="proLoaiNguoiDung">
+                                            <option disabled>Chọn loại người dùng</option>
+                                            <option value="HV">Học viên</option>
+                                            <option value="GV">Giáo vụ</option>
+                                        </select>
+                                    </div>
                                     <div class="divButton">
-                                        <button class="btn btn-success btnUpdateInfo">Cập nhật</button>
+                                        <button id="btnCapNhatNguoiDung" type="button" class="btn btn-success btnUpdateInfo">Cập nhật</button>
                                     </div>
                                 </div>
 
@@ -307,94 +315,7 @@
                         </div>
                         <div class="tab-pane container fade" id="KhoaHoc">
                             <div class="titleInfo">Khoá Học Của Tôi</div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="subject__item ">
-                                        <div class="subject__img">
-                                            <img src="../assets/img/khoahoc.jpg" alt="">
-                                        </div>
-                                        <div class="subject__text">
-                                            <h3 class="txtTenKhoaHoc">Lủm chủm trôi trôi </h3>
-                                            <div class="danhgia m-1">
-                                                <span><i class="fa fa-users"></i></span>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
-                                            <div class="giangvien m-1">
-                                                <span>Giảng viên:</span>
-                                                <span id="txtTenGiangVien">Đặng trung hiếu</span>
-                                            </div>
-                                            <div class="dongia m-1">
-                                                <span class="mr-2">Đơn giá:</span><span class="txtGiaTien ">$110.00</span><span class="ml-2">$99.00</span>
-                                            </div>
-                                            <div class="luotxem">
-                                                <span class="text-right"><i class="fa fa-eye"></i>200 lượt xem</span>
-                                            </div>
-                                            <button type "button" class="btn btn-success m-2">Đăng Kí</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="subject__item ">
-                                        <div class="subject__img">
-                                            <img src="../assets/img/khoahoc.jpg" alt="">
-                                        </div>
-                                        <div class="subject__text">
-                                            <h3 class="txtTenKhoaHoc">Lủm chủm trôi trôi </h3>
-                                            <div class="danhgia m-1">
-                                                <span><i class="fa fa-users"></i></span>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
-                                            <div class="giangvien m-1">
-                                                <span>Giảng viên:</span>
-                                                <span id="txtTenGiangVien">Đặng trung hiếu</span>
-                                            </div>
-                                            <div class="dongia m-1">
-                                                <span class="mr-2">Đơn giá:</span><span class="txtGiaTien ">$110.00</span><span class="ml-2">$99.00</span>
-                                            </div>
-                                            <div class="luotxem">
-                                                <span class="text-right"><i class="fa fa-eye"></i>200 lượt xem</span>
-                                            </div>
-                                            <button type "button" class="btn btn-success m-2">Đăng Kí</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="subject__item ">
-                                        <div class="subject__img">
-                                            <img src="../assets/img/khoahoc.jpg" alt="">
-                                        </div>
-                                        <div class="subject__text">
-                                            <h3 class="txtTenKhoaHoc">Lủm chủm trôi trôi </h3>
-                                            <div class="danhgia m-1">
-                                                <span><i class="fa fa-users"></i></span>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
-                                            <div class="giangvien m-1">
-                                                <span>Giảng viên:</span>
-                                                <span id="txtTenGiangVien">Đặng trung hiếu</span>
-                                            </div>
-                                            <div class="dongia m-1">
-                                                <span class="mr-2">Đơn giá:</span><span class="txtGiaTien ">$110.00</span><span class="ml-2">$99.00</span>
-                                            </div>
-                                            <div class="luotxem">
-                                                <span class="text-right"><i class="fa fa-eye"></i>200 lượt xem</span>
-                                            </div>
-                                            <button type "button" class="btn btn-success m-2">Đăng Kí</button>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="row" id="divKhoaHocCuaToi">
                             </div>
                         </div>
                         <div class="tab-pane container fade" id="ThanhToan">...</div>

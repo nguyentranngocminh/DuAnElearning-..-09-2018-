@@ -22,8 +22,7 @@
         "lite-server": "^2.4.0"
     },
     "scripts": {
-        "start": "lite-server",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "lite-server"
     },
     "author": "",
     "license": "ISC"
